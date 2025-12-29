@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: Arial;
+            padding-top: 50px;
+        }
+        .box
+        {
+            width: 300px;
+            height: 400px;
+            background: green;
+            margin: auto;
+            animation: movebox 2s infinite alternate;
+        }
+        @keyframes movebox
+        {
+            from
+            {
+                transform: translateX(0);
+            }
+            to
+            {
+                transform: translateX(200px);
+            }
+        }
+        .box:hover
+        {
+            background-color: aqua;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Animation Example</h2>
+    <div class="box"></div>
+</body>
+</html>
